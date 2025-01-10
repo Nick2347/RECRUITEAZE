@@ -1,4 +1,5 @@
-ATS Resume Expert 📄🤖
+ATS Resume Expert(RECRUITEASE) 📄🤖
+
 A Streamlit-based application that analyzes resumes against job descriptions using Generative AI and stores/uploaded resumes in a PostgreSQL database.
 
 Description
