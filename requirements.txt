@@ -1,0 +1,9 @@
+streamlit
+google
+google-generativeai
+python-dotenv
+pdf2image
+pillow
+fpdf
+psycopg2
+pdfplumber
