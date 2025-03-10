@@ -17,14 +17,9 @@ load_dotenv()
 
 # ----------------- Database Connection ----------------- #
 def get_db_connection():
+    URL=os.getenv("DATABASE_URL")
     try:
-        return psycopg2.connect(
-            host="localhost",
-            port=5432,
-            dbname="shortlisted resumes",
-            user="postgres",
-            password="123"
-        )
+        return psycopg2.connect(URL)
     except psycopg2.Error as e:
         st.error(f"❌ Error connecting to the database: {e}")
         return None
