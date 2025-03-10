@@ -158,7 +158,7 @@ def analyze_resumes(job_description, resumes):
 st.set_page_config(page_title="RecruitEaze Resume Screener", page_icon="📄", layout="wide")
 
 with st.sidebar:
-    st.image("assets/logo.gif", use_container_width=True)
+    st.image("assets/logo.gif", width=300)
     st.title("RecruitEaze Resume Screener")
     st.info("Upload a ZIP file containing multiple resumes in **PDF format**.")
 
