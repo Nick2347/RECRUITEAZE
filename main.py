@@ -19,7 +19,6 @@ load_dotenv()
 def get_db_connection():
     URL=os.getenv("DATABASE_URL")
     try:
-        st.write("Connection successful")
         return psycopg2.connect(URL)
     except psycopg2.Error as e:
         st.error(f"❌ Error connecting to the database: {e}")
