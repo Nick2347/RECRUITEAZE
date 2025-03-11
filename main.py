@@ -28,7 +28,7 @@ def get_db_connection():
 def save_to_database(candidate_name, skills, experience, resume_file, match_percentage, phone_number):
     conn = get_db_connection()
     if conn is None:
-        return
+        return "Disconnected"
     try:
         cur = conn.cursor()
         cur.execute("""
